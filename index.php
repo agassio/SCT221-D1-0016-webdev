@@ -16,8 +16,7 @@
    
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="res/bootstrap/jquery-3.5.1.js"></script>
-	<script src="res/bootstrap/popper.min.js"></script>
-	<script src="res/bootstrap/js/bootstrap.min.js"></script>
+	
 	<link href="res/bootstrap/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 		
 
@@ -142,11 +141,17 @@ function resetb()
     document.getElementById("err").innerHTML="";
 }
 
+function loadGreeting()
+{  
+    document.getElementById("greeting").innerHTML = 'Good morning'; 
+
+}
+
 </script>
 
 </head>
 
-<body >
+<body onload="loadGreeting()">
 
 
     <div class="sidenav">
@@ -159,12 +164,22 @@ function resetb()
     <div class="main">
        <div class="col-md-8 col-sm-12">
 
+          
+           <p id="greeting"></p>
+                <hr>   
+           
+        </div>
+
+    </div>
+    <div class="main">
+       <div class="col-md-8 col-sm-12">
+
             <div class="login-form">
                 <p class="Login-text"><strong>Bio</strong> </p>
                 <hr>
                 <p>"Driven by curiosity and fueled by creativity, I'm a passionate individual with a love for learning and a knack for innovative thinking. With a keen eye for detail and a flair for problem-solving, I navigate complex challenges with ease and enthusiasm. Let's connect and explore the possibilities!"</p>
-                
-            </div>
+            </div>    
+       
         </div>
 
     </div>
